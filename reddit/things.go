@@ -555,29 +555,6 @@ type Post struct {
 	Stickied   bool `json:"stickied"`
 }
 
-/*
-// Subreddit holds information about a subreddit
-type Subreddit struct {
-	ID      string     `json:"id,omitempty"`
-	FullID  string     `json:"name,omitempty"`
-	Created *Timestamp `json:"created_utc,omitempty"`
-
-	URL                  string `json:"url,omitempty"`
-	Name                 string `json:"display_name,omitempty"`
-	NamePrefixed         string `json:"display_name_prefixed,omitempty"`
-	Title                string `json:"title,omitempty"`
-	Description          string `json:"public_description,omitempty"`
-	Type                 string `json:"subreddit_type,omitempty"`
-	SuggestedCommentSort string `json:"suggested_comment_sort,omitempty"`
-
-	Subscribers     int  `json:"subscribers"`
-	ActiveUserCount *int `json:"active_user_count,omitempty"`
-	NSFW            bool `json:"over18"`
-	UserIsMod       bool `json:"user_is_moderator"`
-	Subscribed      bool `json:"user_is_subscriber"`
-	Favorite        bool `json:"user_has_favorited"`
-}
-*/
 // Subreddit holds information about a subreddit
 // This struct was generated from the response from the api.
 // Some fields are interface{} because they had empty json values, eg:
